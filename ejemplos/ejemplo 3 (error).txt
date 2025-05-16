@@ -1,0 +1,7 @@
+// Falta el ; al final de la asignación puerto
+configuracion MiConfig {
+  seccion General {
+    puerto = 8080
+    nombre = "ServidorTest";
+  }
+}

@@ -1,0 +1,11 @@
+configuracion MiConfig {
+  seccion General {
+    puerto = 8080;
+    nombre = "ServidorTest";
+    max_conexiones = 100 * 2;
+  }
+  seccion Seguridad {
+    habilitado = true;
+    nivel = 3 + 1;
+  }
+}

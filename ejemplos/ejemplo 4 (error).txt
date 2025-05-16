@@ -1,0 +1,7 @@
+// Llave de cierre faltante en seccion Seguridad
+configuracion MiConfig {
+  seccion Seguridad {
+    habilitado = true;
+    nivel = 3 + 1;
+}
+}
