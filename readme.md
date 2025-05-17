@@ -33,8 +33,8 @@ Este proyecto implementa un analizador sintáctico para la gramática de configu
 1. Clonar el repositorio:
 
 
-git clone https://github.com/tu_usuario/tu_repositorio.git
-cd tu_repositorio
+git clone https://github.com/Tigger-Funes379/47293.git
+cd 47293
 
 ## Uso
 El analizador lee el archivo input.txt para analizarlo. Para probar los ejemplos provistos, se debe copiar el archivo deseado a input.txt y luego ejecutar:
