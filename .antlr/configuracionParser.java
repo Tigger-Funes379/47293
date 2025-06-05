@@ -1,4 +1,4 @@
-// Generated from d:/Mis Cosas/Documents/UTN/Ing en Sistemas/2do/Sintaxis y Semantica de los Lenguajes/Analizador - Recuperatorio/47293/configuracion.g4 by ANTLR 4.13.1
+// Generated from d:/Mis Cosas/Documents/UTN/Ing en Sistemas/2do/Sintaxis y Semantica de los Lenguajes/Analizador - Recuperatorio/47293/47293/configuracion.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -17,7 +17,7 @@ public class configuracionParser extends Parser {
 		new PredictionContextCache();
 	public static final int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, Identifier=6, Number=7, TextLiteral=8, 
-		WS=9, ERROR_CHAR=10;
+		WS=9;
 	public static final int
 		RULE_program = 0, RULE_simpleStatement = 1, RULE_assignmentStatement = 2, 
 		RULE_outputStatement = 3, RULE_constant = 4;
@@ -38,7 +38,7 @@ public class configuracionParser extends Parser {
 	private static String[] makeSymbolicNames() {
 		return new String[] {
 			null, null, null, null, null, null, "Identifier", "Number", "TextLiteral", 
-			"WS", "ERROR_CHAR"
+			"WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -105,6 +105,14 @@ public class configuracionParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_program; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof configuracionListener ) ((configuracionListener)listener).enterProgram(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof configuracionListener ) ((configuracionListener)listener).exitProgram(this);
+		}
 	}
 
 	public final ProgramContext program() throws RecognitionException {
@@ -155,6 +163,14 @@ public class configuracionParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_simpleStatement; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof configuracionListener ) ((configuracionListener)listener).enterSimpleStatement(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof configuracionListener ) ((configuracionListener)listener).exitSimpleStatement(this);
+		}
 	}
 
 	public final SimpleStatementContext simpleStatement() throws RecognitionException {
@@ -203,6 +219,14 @@ public class configuracionParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_assignmentStatement; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof configuracionListener ) ((configuracionListener)listener).enterAssignmentStatement(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof configuracionListener ) ((configuracionListener)listener).exitAssignmentStatement(this);
+		}
 	}
 
 	public final AssignmentStatementContext assignmentStatement() throws RecognitionException {
@@ -239,6 +263,14 @@ public class configuracionParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_outputStatement; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof configuracionListener ) ((configuracionListener)listener).enterOutputStatement(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof configuracionListener ) ((configuracionListener)listener).exitOutputStatement(this);
+		}
 	}
 
 	public final OutputStatementContext outputStatement() throws RecognitionException {
@@ -278,6 +310,14 @@ public class configuracionParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_constant; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof configuracionListener ) ((configuracionListener)listener).enterConstant(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof configuracionListener ) ((configuracionListener)listener).exitConstant(this);
+		}
 	}
 
 	public final ConstantContext constant() throws RecognitionException {
@@ -311,7 +351,7 @@ public class configuracionParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\n$\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
+		"\u0004\u0001\t$\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
 		"\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004\u0001"+
 		"\u0000\u0005\u0000\f\b\u0000\n\u0000\f\u0000\u000f\t\u0000\u0001\u0000"+
 		"\u0001\u0000\u0001\u0001\u0001\u0001\u0003\u0001\u0015\b\u0001\u0001\u0002"+

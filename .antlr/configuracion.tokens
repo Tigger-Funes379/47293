@@ -7,7 +7,6 @@ Identifier=6
 Number=7
 TextLiteral=8
 WS=9
-ERROR_CHAR=10
 '='=1
 ';'=2
 'output'=3
