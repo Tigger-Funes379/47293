@@ -15,11 +15,7 @@ class CustomErrorListener extends antlr4.error.ErrorListener {
 }
 
 async function main() {
-  const inputFile = process.argv[2];
-  if (!inputFile) {
-    console.error('Uso: node analizador.js archivo.txt');
-    process.exit(1);
-  }
+  const inputFile = 'input.txt';
 
   const input = fs.readFileSync(inputFile, 'utf-8');
   const chars = new antlr4.InputStream(input);
@@ -39,7 +35,6 @@ async function main() {
   try {
     parser.program();
   } catch (e) {
-    // En caso de error crítico
     console.error('Error crítico durante el parsing:', e.message);
     process.exit(1);
   }
