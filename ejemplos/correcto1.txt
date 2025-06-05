@@ -1,0 +1,3 @@
+nombre = "Juan";
+edad = 30;
+output("Hola mundo");

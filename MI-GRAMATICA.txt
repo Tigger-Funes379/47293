@@ -1,0 +1,19 @@
+Program ::= {SimpleStatement}
+
+SimpleStatement ::= AssignmentStatement | OutputStatement
+
+AssignmentStatement ::= Identifier "=" Constant ";”
+
+OutputStatement ::= "output" "(" TextLiteral ")" ";"
+
+Constant ::= Number | TextLiteral
+
+TextLiteral ::= "\"" { any character except "\"" } "\""
+
+Identifier ::= letter { letter | digit | "_" }
+
+Number ::= digit { digit }
+
+letter ::= "a" | ... | "z" | "A" | ... | "Z"
+
+digit ::= "0" | ... | "9"

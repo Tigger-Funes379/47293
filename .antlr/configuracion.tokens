@@ -1,0 +1,15 @@
+T__0=1
+T__1=2
+T__2=3
+T__3=4
+T__4=5
+Identifier=6
+Number=7
+TextLiteral=8
+WS=9
+ERROR_CHAR=10
+'='=1
+';'=2
+'output'=3
+'('=4
+')'=5
